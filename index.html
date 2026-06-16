@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever Yours ❤️ - Victoria & Emmanuel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Password Screen -->
+    <div id="passwordScreen" class="password-screen">
+        <div class="password-container">
+            <div class="password-content">
+                <h1>🔒 Enter Your Love Code</h1>
+                <p>Only for the one I love...</p>
+                <input type="password" id="passwordInput" placeholder="What's our special date?" maxlength="8">
+                <button onclick="checkPassword()">Unlock My Heart ❤️</button>
+                <p class="hint">Hint: Our anniversary (DDMMYYYY)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Website -->
+    <div id="mainContent" class="main-content hidden">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">❤️ Forever Yours</div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#letter">Letter</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#forever">Forever</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="stars"></div>
+            <div class="hearts-container"></div>
+            <div class="roses-container"></div>
+            
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="name-victoria">Victoria</span>
+                    <span class="heart-separator">❤️</span>
+                    <span class="name-emmanuel">Emmanuel</span>
+                </h1>
+                <p class="hero-subtitle">A Love Story Written in the Stars</p>
+                
+                <div class="timer-container">
+                    <h2>Our Journey Together</h2>
+                    <div class="timer">
+                        <div class="timer-item">
+                            <span class="timer-value" id="days">0</span>
+                            <span class="timer-label">Days</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-value" id="hours">0</span>
+                            <span class="timer-label">Hours</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-value" id="minutes">0</span>
+                            <span class="timer-label">Minutes</span>
+                        </div>
+                        <div class="timer-item">
+                            <span class="timer-value" id="seconds">0</span>
+                            <span class="timer-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="scroll-button" onclick="scrollToSection('letter')">
+                    Read My Letter ↓
+                </button>
+            </div>
+        </section>
+
+        <!-- Love Letter Section -->
+        <section id="letter" class="letter-section">
+            <div class="letter-container">
+                <div class="letter">
+                    <div class="letter-header">
+                        <h2>💌 A Letter From My Heart</h2>
+                        <p class="letter-date">To: Victoria | From: Emmanuel ❤️</p>
+                    </div>
+                    
+                    <div class="letter-content">
+                        <p class="typewriter-text">Dear Victoria,</p>
+                        <p>Meeting you has been one of the greatest blessings in my life. Thank you for your love, your patience, and every beautiful moment we've shared together.</p>
+                        <p>You are my sunshine on cloudy days, my strength when I'm weak, and my reason to smile every single day. Your presence in my life has transformed everything.</p>
+                        <p>No matter what happens, always remember that you are precious to me and will forever have a special place in my heart.</p>
+                        <p>I thank God every day for bringing you into my life. You are my greatest blessing, my soulmate, and my forever love.</p>
+                        <p class="letter-closing">Forever and always,</p>
+                        <p class="letter-signature">Ajao Emmanuel Olaoluwa ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="timeline-section">
+            <h2>📖 Our Love Story</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-marker">📅</div>
+                    <div class="timeline-content">
+                        <h3>The Beginning</h3>
+                        <p>When our eyes first met, I knew you were someone special. That moment changed everything.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-marker">💕</div>
+                    <div class="timeline-content">
+                        <h3>Falling in Love</h3>
+                        <p>Every day with you felt like a dream. Your smile became my favorite thing in the world.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-marker">🌹</div>
+                    <div class="timeline-content">
+                        <h3>Growing Together</h3>
+                        <p>Through every season, our love has only grown stronger. We've built something beautiful together.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-marker">✨</div>
+                    <div class="timeline-content">
+                        <h3>Forever Yours</h3>
+                        <p>And now, I want to spend the rest of my life making you happy. You are my forever.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photo Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <h2>📸 Our Memories</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>💑</span>
+                        <p>Our First Photo</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🌅</span>
+                        <p>Sunrise Moments</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🌙</span>
+                        <p>Moonlit Nights</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🎂</span>
+                        <p>Special Celebrations</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>✈️</span>
+                        <p>Adventures Together</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <span>🎭</span>
+                        <p>Fun Times</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Will You Be Mine Forever Section -->
+        <section id="forever" class="forever-section">
+            <div class="forever-container">
+                <h2>💍 Will You Be Mine Forever?</h2>
+                <p class="forever-subtitle">Victoria, I want to spend eternity with you...</p>
+                
+                <div class="forever-buttons">
+                    <button class="btn-yes" onclick="handleYes()">YES! 💕</button>
+                    <button class="btn-no" id="noBtn" onmouseover="moveButton()" onclick="moveButton()">No</button>
+                </div>
+
+                <div id="celebration" class="celebration hidden">
+                    <div class="confetti"></div>
+                    <h3>🎉 I LOVE YOU SO MUCH! 🎉</h3>
+                    <p>You've made me the happiest man alive!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hidden Messages Section -->
+        <section class="hidden-messages">
+            <div class="message-box">
+                <p>🤫 <strong>Secret Message:</strong> "You are my greatest adventure, my deepest love, and my forever home. Thank you for being you. ❤️"</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with ❤️ by Emmanuel for Victoria</p>
+            <p>December 21, 2024 - Forever ∞</p>
+        </footer>
+    </div>
+
+    <!-- Audio for background music -->
+    <audio id="backgroundMusic" loop>
+        <source src="https://assets.mixkit.co/active_storage/sfx/2741/2741-preview.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
